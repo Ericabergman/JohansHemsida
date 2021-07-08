@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/995d6de43e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/kontakt.css">
+
+    <title>Johan Forsmark</title>
+</head>
+
+<body>
+    <!----------------------- HEADER STARTS ------------------>
+    <header>
+        <!------------------ NAVIGATION STARTS ------------------->
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <h4 id="#nav-hem">J.Forsmark</h4>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li id="nav-profil"><a href="profil.html">Profil</a></li>
+                <li id="nav-utveckling & samhället "><a href="utveckling&samhället.html">utveckling &
+                        samhället</a>
+                </li>
+                <li id="nav-psykisk-ohälsa"><a href="psykisk-ohälsa.html">Psykisk Ohälsa</a></li>
+                <li id="nav-erbjudande & föreläsning"><a href="erbjudande&föreläsning.html">Erbjudande &
+                        Föreläsning</a>
+                </li>
+                <li id="nav-kontakt"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <!-- btn for open close navbar when the screen gets smaller-->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!-- btn for open close navbar when the screen gets smaller-->
+        </nav>
+        <!--------------------------navigation ends ---------------------->
+    </header>
+    <!------------------------------- header ends -------------------------->
+    <main>
+        <!------------------------- SECTION TEXT STARTS ------------------->
+        <section class="text-container">
+            <h2 class="subtitle-contact-me">Kontakta mig</h2>
+            <div class="text-content">
+                <p class="">Här kan ni kontakta mig samt hitta mig på sociala medier.</p>
+            </div>
+            <div class="text-content_subtext">
+                <p class="temporary-text">
+                    HÅLL UTKIK EFTER UPPDATERINGAR...!!
+                </p>
+            </div>
+            <a href="#contact me" class="contact_me">För att kontakta mig..
+                <div class="container-icon">
+                    <i class="fas fa-chevron-down" id="contact me.."></i>
+                </div>
+            </a>
+        </section>
+        <!--------------------- ---SECTION TEXT ENDS ------------------------------>
+        <section class="section-card">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="../images/bild till profil sida.jpg" class="card_img_1" alt="profil på johan">
+                        <h3 class="title_card">Johan Forsmark</h3>
+                        <p class="card_text">Länk till mina sociala medier hittar ni här:</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/krokorin"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="column">
+                    <div class="card">
+                        <img src="../images/bild-erica-kontaktsida.jpg" class="card_img_2" alt="profil på erica">
+                        <h3 class="title_card">Erica Bergman</h3>
+                        <p class="card_text">Länk till mina sociala medier hittar ni här:</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/erica.a.bergman"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!--------------------- SECTION FORM STARTS ---------------------------->
+        <section class="form-section" id="contact me">
+            <div class="container">
+                <form action="https://formspree.io/f/mrgrljgk" method="post">
+                    <div class="row100">
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="firstName" required>
+                                <span class="text">Förnamn</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="lastName" required>
+                                <span class="text">Efternamn</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="email" required>
+                                <span class="text">Email</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="phone" required>
+                                <span class="text">Mobil</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox textarea">
+                                <textarea cols="30" rows="10" name="message" required></textarea>
+                                <span class="text">Skriv ditt meddelande här..</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <input type="Submit" value="skicka">
+                        </div>
+                    </div>
+                    <div id="status"></div>
+                </form>
+            </div>
+        </section>
+        <!--------------------- SECTION FORM ENDS ------------------------->
+    </main>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
